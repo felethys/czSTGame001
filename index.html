@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太空文字放置游戏</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a;
+            color: #ffffff;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .game-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        
+        .game-info h2 {
+            color: #00ffff;
+            margin-top: 0;
+        }
+        
+        .game-info p {
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        
+        .status {
+            background: rgba(255, 255, 0, 0.1);
+            border: 1px solid #ffff00;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .status h3 {
+            color: #ffff00;
+            margin-top: 0;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 20px 0;
+        }
+        
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .features li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #ff00ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>太空文字放置游戏</h1>
+        
+        <div class="game-info">
+            <h2>Web试玩版</h2>
+            <p>这是一个太空题材的文字放置游戏，玩家可以派遣飞船去不同星区进行探索和资源收集。</p>
+            
+            <div class="status">
+                <h3>当前状态</h3>
+                <p>🚧 此为演示版本，展示游戏界面和说明</p>
+                <p>🎮 完整游戏需要通过Godot引擎导出WebAssembly版本</p>
+            </div>
+            
+            <div class="features">
+                <h3>游戏特色</h3>
+                <ul>
+                    <li>无需安装，直接在浏览器中游玩</li>
+                    <li>自动保存游戏进度</li>
+                    <li>支持多种星区探索</li>
+                    <li>丰富的任务和事件系统</li>
+                    <li>装备系统和战斗机制</li>
+                </ul>
+            </div>
+            
+            <div class="features">
+                <h3>技术说明</h3>
+                <ul>
+                    <li>使用Godot 4.7引擎开发</li>
+                    <li>导出为WebAssembly版本</li>
+                    <li>支持现代浏览器（Chrome、Firefox、Safari、Edge）</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <h2>如何体验完整游戏</h2>
+            <p>1. 下载完整的Godot项目源码</p>
+            <p>2. 使用Godot引擎打开项目</p>
+            <p>3. 导出为Web版本</p>
+            <p>4. 部署到GitHub Pages或其他平台</p>
+        </div>
+    </div>
+</body>
+</html>
